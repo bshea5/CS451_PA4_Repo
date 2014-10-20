@@ -2,8 +2,8 @@
 // TODO: Implement spotlight shading, with diffusion and specular lights
 //
 
-#version 120
-//#version 330 //doesn't like this
+//#version 120
+#version 330 //doesn't like this
  
 layout (std140) uniform Matrices 
 {
@@ -37,6 +37,4 @@ void main ()
  
     gl_Position = m_pvm * position;
 
-    gl_FrontColor =  gl_Color;	//these 2 lines were already here
-	gl_Position = ftransform(); //
 }

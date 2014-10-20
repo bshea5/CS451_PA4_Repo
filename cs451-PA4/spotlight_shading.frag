@@ -2,8 +2,8 @@
 // TODO: Implement spotlight shading, with diffusion and specular lights
 //
 
-#version 120
-//#version 330 //doesn't like this
+//#version 120
+#version 330 //doesn't like this
  
 out vec4 colorOut;
  
@@ -51,6 +51,4 @@ void main()
     }
  
     colorOut = max(intensity * diffuse + spec, ambient);
-
-    gl_FragColor = gl_Color; //this line was already here
 }
