@@ -2,33 +2,15 @@
 // TODO: Implement texture mapping. This should add on to the spotlight shader: spotlight_shading.vert/frag
 //
 
-#version 330
+attribute vec3 v_coord;
+varying vec4 texCoords;
+uniform mat4 m,v,p;
  
-layout (std140) uniform Matrices {
-    mat4 m_pvm;
-    mat4 m_viewModel;
-    mat3 m_normal;
-};
- 
-layout (std140) uniform Lights {
-    vec3 l_dir;    // camera space
-};
- 
-in vec4 position;   // local space
-in vec3 normal;     // local space
-in vec2 texCoord;
- 
-// the data to be sent to the fragment shader
-out Data {
-    vec3 normal;
-    vec4 eye;
-    vec2 texCoord;
-} DataOut;
- 
-void main () {
- 
-    DataOut.normal = normalize(m_normal * normal);
-    DataOut.eye = -(m_viewModel * position);
-    DataOut.texCoord = texCoord;
- 
-    
+void main(void) {
+    mat4 mvp = p*v*m;
+    gl_Position = mvp * vec4(v_coord, 1.0);
+    texCoords = vec4(v_coord, 1.0);
+}
+
+//void main()
+//{ gl_Position = ftransform(); } 
