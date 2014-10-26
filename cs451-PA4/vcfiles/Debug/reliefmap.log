@@ -1,12 +1,13 @@
-﻿Build started 10/23/2014 10:03:29 AM.
-     1>Project "C:\Users\Brandon\Downloads\cs451-PA4\vcfiles\reliefmap.vcxproj" on node 2 (Build target(s)).
+﻿Build started 10/26/2014 2:39:26 PM.
+     1>Project "C:\Users\Brandon\Documents\Visual Studio 2013\Projects\CS451_PA4_Repo\cs451-PA4\vcfiles\reliefmap.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I.. /I../mathtool /I../modelgraph /I../soil /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D GLEW_STATIC /D FREEGLUT_STATIC /D _CRT_SECURE_NO_WARNINGS /D _MBCS /D WIN32 /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt ..\soil\SOIL.c
-         SOIL.c
-     1>c:\users\brandon\downloads\cs451-pa4\soil\soil.c(1719): warning C4018: '<=' : signed/unsigned mismatch
-     1>c:\users\brandon\downloads\cs451-pa4\soil\soil.c(1729): warning C4018: '<' : signed/unsigned mismatch
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I.. /I../mathtool /I../modelgraph /I../soil /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D GLEW_STATIC /D FREEGLUT_STATIC /D _CRT_SECURE_NO_WARNINGS /D _MBCS /D WIN32 /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\main.cpp
+         main.cpp
+     1>c:\users\brandon\documents\visual studio 2013\projects\cs451_pa4_repo\cs451-pa4\draw.h(219): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>c:\users\brandon\documents\visual studio 2013\projects\cs451_pa4_repo\cs451-pa4\draw.h(220): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>c:\users\brandon\documents\visual studio 2013\projects\cs451_pa4_repo\cs451-pa4\draw.h(221): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Brandon\Downloads\cs451-PA4\vcfiles\Debug\reliefmap.exe" /INCREMENTAL /NOLOGO /LIBPATH:../GL glew32sd.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Brandon\Downloads\cs451-PA4\vcfiles\Debug\reliefmap.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Brandon\Downloads\cs451-PA4\vcfiles\Debug\reliefmap.lib" /MACHINE:X86 Debug\gli.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Brandon\Documents\Visual Studio 2013\Projects\CS451_PA4_Repo\cs451-PA4\vcfiles\Debug\reliefmap.exe" /INCREMENTAL /NOLOGO /LIBPATH:../GL glew32sd.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Brandon\Documents\Visual Studio 2013\Projects\CS451_PA4_Repo\cs451-PA4\vcfiles\Debug\reliefmap.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Brandon\Documents\Visual Studio 2013\Projects\CS451_PA4_Repo\cs451-PA4\vcfiles\Debug\reliefmap.lib" /MACHINE:X86 Debug\gli.obj
          Debug\main.obj
          Debug\Basic.obj
          Debug\Quaternion.obj
@@ -19,9 +20,27 @@
          Debug\image_helper.obj
          Debug\SOIL.obj
          Debug\stb_image_aug.obj
-         reliefmap.vcxproj -> C:\Users\Brandon\Downloads\cs451-PA4\vcfiles\Debug\reliefmap.exe
-     1>Done Building Project "C:\Users\Brandon\Downloads\cs451-PA4\vcfiles\reliefmap.vcxproj" (Build target(s)).
+     1>LINK : warning LNK4098: defaultlib 'LIBCMTD' conflicts with use of other libs; use /NODEFAULTLIB:library
+     1>glew32sd.lib(glew.obj) : warning LNK4204: 'C:\Users\Brandon\Documents\Visual Studio 2013\Projects\CS451_PA4_Repo\cs451-PA4\vcfiles\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>freeglut_static_vs2010_d.lib(freeglut_callbacks.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'freeglut_static_vs2010_d.lib(freeglut_callbacks.obj)' or at 'C:\Users\Brandon\Documents\Visual Studio 2013\Projects\CS451_PA4_Repo\cs451-PA4\vcfiles\Debug\vc100.pdb'; linking object as if no debug info
+     1>freeglut_static_vs2010_d.lib(freeglut_cursor.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'freeglut_static_vs2010_d.lib(freeglut_cursor.obj)' or at 'C:\Users\Brandon\Documents\Visual Studio 2013\Projects\CS451_PA4_Repo\cs451-PA4\vcfiles\Debug\vc100.pdb'; linking object as if no debug info
+     1>freeglut_static_vs2010_d.lib(freeglut_display.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'freeglut_static_vs2010_d.lib(freeglut_display.obj)' or at 'C:\Users\Brandon\Documents\Visual Studio 2013\Projects\CS451_PA4_Repo\cs451-PA4\vcfiles\Debug\vc100.pdb'; linking object as if no debug info
+     1>freeglut_static_vs2010_d.lib(freeglut_font.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'freeglut_static_vs2010_d.lib(freeglut_font.obj)' or at 'C:\Users\Brandon\Documents\Visual Studio 2013\Projects\CS451_PA4_Repo\cs451-PA4\vcfiles\Debug\vc100.pdb'; linking object as if no debug info
+     1>freeglut_static_vs2010_d.lib(freeglut_font_data.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'freeglut_static_vs2010_d.lib(freeglut_font_data.obj)' or at 'C:\Users\Brandon\Documents\Visual Studio 2013\Projects\CS451_PA4_Repo\cs451-PA4\vcfiles\Debug\vc100.pdb'; linking object as if no debug info
+     1>freeglut_static_vs2010_d.lib(freeglut_init.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'freeglut_static_vs2010_d.lib(freeglut_init.obj)' or at 'C:\Users\Brandon\Documents\Visual Studio 2013\Projects\CS451_PA4_Repo\cs451-PA4\vcfiles\Debug\vc100.pdb'; linking object as if no debug info
+     1>freeglut_static_vs2010_d.lib(freeglut_input_devices.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'freeglut_static_vs2010_d.lib(freeglut_input_devices.obj)' or at 'C:\Users\Brandon\Documents\Visual Studio 2013\Projects\CS451_PA4_Repo\cs451-PA4\vcfiles\Debug\vc100.pdb'; linking object as if no debug info
+     1>freeglut_static_vs2010_d.lib(freeglut_joystick.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'freeglut_static_vs2010_d.lib(freeglut_joystick.obj)' or at 'C:\Users\Brandon\Documents\Visual Studio 2013\Projects\CS451_PA4_Repo\cs451-PA4\vcfiles\Debug\vc100.pdb'; linking object as if no debug info
+     1>freeglut_static_vs2010_d.lib(freeglut_main.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'freeglut_static_vs2010_d.lib(freeglut_main.obj)' or at 'C:\Users\Brandon\Documents\Visual Studio 2013\Projects\CS451_PA4_Repo\cs451-PA4\vcfiles\Debug\vc100.pdb'; linking object as if no debug info
+     1>freeglut_static_vs2010_d.lib(freeglut_menu.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'freeglut_static_vs2010_d.lib(freeglut_menu.obj)' or at 'C:\Users\Brandon\Documents\Visual Studio 2013\Projects\CS451_PA4_Repo\cs451-PA4\vcfiles\Debug\vc100.pdb'; linking object as if no debug info
+     1>freeglut_static_vs2010_d.lib(freeglut_spaceball.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'freeglut_static_vs2010_d.lib(freeglut_spaceball.obj)' or at 'C:\Users\Brandon\Documents\Visual Studio 2013\Projects\CS451_PA4_Repo\cs451-PA4\vcfiles\Debug\vc100.pdb'; linking object as if no debug info
+     1>freeglut_static_vs2010_d.lib(freeglut_state.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'freeglut_static_vs2010_d.lib(freeglut_state.obj)' or at 'C:\Users\Brandon\Documents\Visual Studio 2013\Projects\CS451_PA4_Repo\cs451-PA4\vcfiles\Debug\vc100.pdb'; linking object as if no debug info
+     1>freeglut_static_vs2010_d.lib(freeglut_stroke_mono_roman.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'freeglut_static_vs2010_d.lib(freeglut_stroke_mono_roman.obj)' or at 'C:\Users\Brandon\Documents\Visual Studio 2013\Projects\CS451_PA4_Repo\cs451-PA4\vcfiles\Debug\vc100.pdb'; linking object as if no debug info
+     1>freeglut_static_vs2010_d.lib(freeglut_stroke_roman.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'freeglut_static_vs2010_d.lib(freeglut_stroke_roman.obj)' or at 'C:\Users\Brandon\Documents\Visual Studio 2013\Projects\CS451_PA4_Repo\cs451-PA4\vcfiles\Debug\vc100.pdb'; linking object as if no debug info
+     1>freeglut_static_vs2010_d.lib(freeglut_structure.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'freeglut_static_vs2010_d.lib(freeglut_structure.obj)' or at 'C:\Users\Brandon\Documents\Visual Studio 2013\Projects\CS451_PA4_Repo\cs451-PA4\vcfiles\Debug\vc100.pdb'; linking object as if no debug info
+     1>freeglut_static_vs2010_d.lib(freeglut_window.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'freeglut_static_vs2010_d.lib(freeglut_window.obj)' or at 'C:\Users\Brandon\Documents\Visual Studio 2013\Projects\CS451_PA4_Repo\cs451-PA4\vcfiles\Debug\vc100.pdb'; linking object as if no debug info
+         reliefmap.vcxproj -> C:\Users\Brandon\Documents\Visual Studio 2013\Projects\CS451_PA4_Repo\cs451-PA4\vcfiles\Debug\reliefmap.exe
+     1>Done Building Project "C:\Users\Brandon\Documents\Visual Studio 2013\Projects\CS451_PA4_Repo\cs451-PA4\vcfiles\reliefmap.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:02.71
+Time Elapsed 00:00:02.23

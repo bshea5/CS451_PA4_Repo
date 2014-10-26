@@ -236,7 +236,7 @@ void setupLight()
 	// Definig spotlight attributes
 	GLfloat spotDir[] = { -1, -1, -1 };
 	glLightf(GL_LIGHT0, GL_SPOT_CUTOFF, 60.0);
-	glLightf(GL_LIGHT0, GL_SPOT_EXPONENT, 20.0);
+	glLightf(GL_LIGHT0, GL_SPOT_EXPONENT, 40.0);
 	glLightfv(GL_LIGHT0, GL_SPOT_DIRECTION, spotDir);
 	//--------------------------------------------------
 

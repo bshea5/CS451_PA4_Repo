@@ -3,7 +3,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LocalDebuggerWorkingDirectory>$(ProjectDir)\..\..</LocalDebuggerWorkingDirectory>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
-    <LocalDebuggerCommandArguments>-texture ./textures/gmu-logo.jpg ./models/essai.obj</LocalDebuggerCommandArguments>
+    <LocalDebuggerCommandArguments>-texture ./textures/got_cover.jpg -normalmap ./textures/got_cover_NRM.jpg  ./models/essai.obj</LocalDebuggerCommandArguments>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LocalDebuggerCommandArguments>./models/capsule.obj</LocalDebuggerCommandArguments>
