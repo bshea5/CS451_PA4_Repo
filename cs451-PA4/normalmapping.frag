@@ -9,6 +9,7 @@ varying vec4 diffuse,ambientGlobal, ambient;
 varying vec3 normal,lightDir,halfVector;
 varying float dist;
 
+//function from: http://www.thetenthplanet.de/archives/1180
 //get the cotangent matrix
 mat3 cotangent_frame( vec3 N, vec3 p, vec2 uv )
 {
@@ -29,12 +30,13 @@ mat3 cotangent_frame( vec3 N, vec3 p, vec2 uv )
     return mat3( T * invmax, B * invmax, N );
 }
 
+//function from: http://www.thetenthplanet.de/archives/1180
 //use the cotangent to perturb the interpolated vertex normal
 vec3 perturb_normal( vec3 N, vec3 V, vec2 texcoord )
 {
     // assume N, the interpolated vertex normal and 
     // V, the view vector (vertex to eye)
-    vec3 map = texture2D( mapBump, texcoord ).xyz;
+    vec3 map = texture2D( norml_map, texcoord ).xyz;
 #ifdef WITH_NORMALMAP_UNSIGNED
     map = map * 255./127. - 128./127.;
 #endif
@@ -61,6 +63,7 @@ void main() {
 
 	//--normal mapping----------------------------------------------------------------
 	n = normalize(texture2D(norml_map, gl_TexCoord[0].st).rgb * 2.0 - 1.0);
+	n = perturb_normal( n, lightDir, gl_TexCoord[0].st);	//handles cotangent
 	
 	/* compute the dot product between normal and ldir */
 	NdotL = max(dot(n,normalize(lightDir)),0.0);
